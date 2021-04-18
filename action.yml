@@ -1,0 +1,13 @@
+name: 'FoxLaby Request Action'
+description: 'Build Request Action!'
+author: 'Karim Mohamed'
+inputs:
+  method:
+    description: 'Set method'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: 'message-square'
+  color: 'blue'
