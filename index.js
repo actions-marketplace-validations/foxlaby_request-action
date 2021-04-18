@@ -9,14 +9,14 @@ const axios = require('axios');
     if (_method == 'POST') {
         await axios.post(_url)
             .catch(function (error) {
-                core.error(error);
+                core.setFailed(error);
             });
     }
 
     if (_method == 'GET') {
         await axios.get(_url)
             .catch(function (error) {
-                core.error(error);
+                core.setFailed(error);
             });
     }
 
