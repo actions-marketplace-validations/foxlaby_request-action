@@ -4,7 +4,8 @@
   "description": "Send request via step action",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build index.js --minify"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/foxlaby/request-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.7",
+    "@vercel/ncc": "^0.28.3",
     "axios": "^0.21.1"
   }
 }

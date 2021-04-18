@@ -1,6 +1,5 @@
-const axios = require('axios');
 const core = require("@actions/core");
-const axios = require("axios");
+const axios = require('axios');
 
 (async () => {
 
