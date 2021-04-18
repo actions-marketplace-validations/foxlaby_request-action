@@ -7,11 +7,17 @@ const axios = require('axios');
     const _url = core.getInput('url');
 
     if (_method == 'POST') {
-        await axios.post(_url);
+        await axios.post(_url)
+            .catch(function (error) {
+                core.error(error);
+            });
     }
 
     if (_method == 'GET') {
-        await axios.get(_url);
+        await axios.get(_url)
+            .catch(function (error) {
+                core.error(error);
+            });
     }
 
 })();
