@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/foxlaby/request-action#readme",
   "dependencies": {
+    "@actions/core": "^1.2.7",
     "axios": "^0.21.1"
   }
 }

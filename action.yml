@@ -5,6 +5,9 @@ inputs:
   method:
     description: 'Set method'
     required: true
+  url:
+    description: 'Set Full URL'
+    required: true
 runs:
   using: 'node12'
   main: 'index.js'
